@@ -12,108 +12,147 @@
 	<!-- Підключення окремого файлу стилів -->
 	<link rel="stylesheet" href="css/style.css">
 	<!-- Заголовок сторінки в браузері -->
-	<title>CV</title>
+	<title>CV - Roman Vdovukhin</title>
 
 </head>
 
 <body>
 	<div class="wrapper">
-		<header class="header">
+		<div class="wrapper__container">
+			<aside class="sidebar">
+				<header class="header">
+					<div class="header__photo-wrapper">
+						<img class="header__avatar" src="img//avatar.webp" alt="Roman Vdovukhin Photo">
+					</div>
+					<div class="header__title-group">
+						<h1 class="header__name">ROMAN<br>VDOVUKHIN</h1>
+						<p class="header__subtitle">JUNIOR FRONTEND DEVELOPER</p>
+					</div>
+				</header>
 
-		</header>
-		<main class="page">
-			<section class="page__main main">
-				<div class="main__container">
-					<h1 class="main__title">Roman</h1>
-					<ul class="mail__items">
-						<li class="mail__item">Location:<span>Izmail, Ukraine</span></li>
-						<li class="mail__item">Email:
-							<a class="mail__link" href="mailto:vdovuhinr@gmail.com">vdovuhinr@gmail.com</a>
-						</li>
-						<li class="mail__item">Discord:
-							<a class="mail__link" href="#">Вдовухин (Роман)
-							</a>
-						</li>
-						<li class="mail__item">GitHub:
-							<a class="mail__link" href="https://github.com/vdovuhin">vdovuhin</a>
-						</li>
+				<div class="sidebar__content">
+					<section id="about" class="sidebar__section">
+						<h2 class="sidebar__title">CAREER SUMMARY</h2>
+						<p class="sidebar__text">
+							I am a detail-oriented technician with an engineering background transitioning into Frontend Development.
+							My
+							goal is to build responsive interfaces and write clean, efficient code. I bring a systematic
+							problem-solving
+							approach and continuous technical discipline.
+						</p>
+					</section>
+
+					<section id="skills" class="sidebar__section">
+						<h2 class="sidebar__title">KEY SKILLS</h2>
+						<ul class="sidebar__list">
+							<li class="sidebar__list-item">HTML5 &amp; CSS3 (BEM)</li>
+							<li class="sidebar__list-item">JavaScript (ES6+) &amp; TypeScript</li>
+							<li class="sidebar__list-item">Git &amp; GitHub Version Control</li>
+							<li class="sidebar__list-item">Responsive Web Design</li>
+							<li class="sidebar__list-item">VS Code, Figma, W3C Validator</li>
+						</ul>
+					</section>
+
+					<section id="contacts" class="sidebar__section">
+						<h2 class="sidebar__title">CONTACTS</h2>
+						<ul class="sidebar__list sidebar__list--contacts">
+							<li class="sidebar__list-item"><strong>Location:</strong> Izmail, Ukraine</li>
+							<li class="sidebar__list-item"><strong>GitHub:</strong> <a class="sidebar__link"
+									href="https://github.com/vdovuhin" target="_blank">vdovuhin</a></li>
+							<li class="sidebar__list-item"><strong>Discord:</strong> vdovuhin</li>
+							<li class="sidebar__list-item"><strong>Email:</strong> vdovuhinr@gmail.com</li>
+						</ul>
+					</section>
+				</div>
+			</aside>
+
+			<main class="main-content">
+				<nav class="nav">
+					<ul class="nav__list">
+						<li class="nav__item"><a class="nav__link" href="#about">About</a></li>
+						<li class="nav__item"><a class="nav__link" href="#skills">Skills</a></li>
+						<li class="nav__item"><a class="nav__link" href="#projects">Projects</a></li>
+						<li class="nav__item"><a class="nav__link" href="#code">Code</a></li>
+						<li class="nav__item"><a class="nav__link" href="#education">Education</a></li>
+						<li class="nav__item"><a class="nav__link" href="#contacts">Contacts</a></li>
 					</ul>
-				</div>
-			</section>
+				</nav>
 
-			<hr class="divider">
+				<section id="projects" class="content-section">
+					<h2 class="content-section__title">WORK EXPERIENCE / PROJECTS</h2>
 
-			<section class="page__about about">
-				<div class="about__container">
-					<div class="about__content content">
-						<h2 class="content__title">About Me</h2>
-						<div class="content__text">
-							<p>I am a technical specialist with experience in consumer electronics repair and mobile device
-								maintenance. I
-								have my own workshop where I design and repair various electronic devices. This engineering background
-								provides
-								me with a solid foundation for learning programming languages and web technologies.</p>
-							<p>I have strong communication skills, work well in a team, and can quickly master new tools. I am looking
-								for
-								opportunities for professional growth and I am ready to take on challenging tasks as I transition into
-								the
-								tech
-								industry.</p>
-						</div>
-					</div>
-				</div>
-			</section>
+					<article class="job-card">
+						<h3 class="job-card__title">Frontend Developer (Educational Projects)</h3>
+						<p class="job-card__meta">RS School | 2026 - Present</p>
+						<ul class="job-card__list">
+							<li class="job-card__list-item">
+								<strong>RS School CV Project:</strong> Semantic, accessible, and responsive CV webpage built with HTML5
+								and CSS3 using BEM methodology.
+							</li>
+							<li class="job-card__list-item">
+								<strong>Project Links:</strong>
+								<a class="content-section__link" href="https://vdovuhin.github.io/rsschool-cv/" target="_blank">Deployed
+									Page</a> |
+								<a class="content-section__link" href="https://github.com/vdovuhin/rsschool-cv" target="_blank">GitHub
+									Code</a>
+							</li>
+						</ul>
+					</article>
+				</section>
 
-			<section class="page__skills skills">
-				<div class="about__container">
-					<div class="about__content content">
-						<h2 class="content__title">Skills</h2>
-					</div>
-					<ul class="skills__list">
-						<li class="skills__item">Frontend: HTML5, CSS3, JavaScript (Core)</li>
-						<li class="skills__item">Tools: Git, GitHub, VS Code</li>
-						<li class="skills__item">Hardware: Arduino, Microcontrollers, Electronics Repair</li>
-						<li class="skills__item">OS: Windows</li>
-					</ul>
-				</div>
-			</section>
+				<section id="code" class="content-section">
+					<h2 class="content-section__title">CODE EXAMPLE</h2>
+					<p class="content-section__description">Codewars Task Solution (8 kyu - "Even or Odd"):</p>
+					<pre class="code-block"><code>function evenOrOdd(number) {
+  return number % 2 === 0 ? &quot;Even&quot; : &quot;Odd&quot;;
+}</code></pre>
+				</section>
 
-			<section class="page__education education">
-				<div class="education__container">
-					<div class="education__content content">
-						<h2 class="content__title">Education</h2>
-						<div class="content__text">
-							<p>Self-Education: Extensive practice with Arduino, C++ basics, and Web Development
-								(HTML/CSS/JS).
-							</p>
-						</div>
-					</div>
-				</div>
-			</section>
+				<section id="education" class="content-section">
+					<h2 class="content-section__title">EDUCATION &amp; COURSES</h2>
 
-			<section class="page__languages languages">
-				<div class="languages__container">
-					<div class="languages__content content">
-						<h2 class="content__title">Languages</h2>
-					</div>
-					<ul class="languages__list">
-						<li class="languages__items">Ukrainian / Russian:</strong> Native</span></li>
+					<article class="job-card">
+						<h3 class="job-card__title">Rolling Scopes School</h3>
+						<p class="job-card__meta">JS/FE Pre-school Course | 2026</p>
+						<ul class="job-card__list">
+							<li class="job-card__list-item">Practical coursework covering HTML5, CSS3, Git basics, and JavaScript
+								fundamentals.</li>
+						</ul>
+					</article>
 
-						<li class="languages__items">Ukrainian / Russian:<span> Native</span></li>
+					<article class="job-card">
+						<h3 class="job-card__title">Technical Vocational Training</h3>
+						<p class="job-card__meta">Electronics Maintenance Specialist</p>
+						<ul class="job-card__list">
+							<li class="job-card__list-item">Specialization in hardware diagnostics, circuit repair, and technical
+								equipment maintenance.</li>
+						</ul>
+					</article>
+				</section>
 
-						<li class="languages__items">English:<span> A1 (Beginner)</span></li>
-					</ul>
-				</div>
-			</section>
-		</main>
-		<footer class="footer">
+				<section class="content-section">
+					<h2 class="content-section__title">ENGLISH LANGUAGE PROFICIENCY</h2>
+					<p class="content-section__text">
+						<strong>Level A1 (Beginner):</strong> Actively improving vocabulary through reading technical documentation,
+						learning materials, and practical tasks.
+					</p>
+				</section>
 
-		</footer>
+				<footer class="footer">
+					<p class="footer__info">
+						<a class="footer__link" href="https://github.com/vdovuhin" target="_blank">GitHub Profile</a> |
+						2026 |
+						<a class="footer__logo-link" href="https://rs.school/js/" target="_blank">
+							<img class="footer__logo" src="img/icons.jpg" alt="RS School Logo" width="80">
+						</a>
+					</p>
+				</footer>
+			</main>
+
+		</div>
+
 	</div>
-	<script src="js/script.js"></script>
-</body>
-
-<script src="js/script.js"></script>
+	<!-- <script src="js/script.js"></script> -->
 </body>
 
 </html>
