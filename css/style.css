@@ -1,0 +1,265 @@
+@charset "UTF-8";
+/* Підключення фрифтів */
+/* Google Fonts (Plugin) */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Allura:wght@400&display=swap");
+/* Локальне підключення шрифтів */
+/* Скидання стилів */
+@import url("reset.css");
+
+/* Скидання змінних */
+:root {
+	--primary: #ff4646;
+	--dark: #181c29;
+	--static-white: #fff;
+	--content-background: #ecf3f8;
+	--tag-purple: #4361ff;
+	--tag-pink: #ff43f7;
+	--tag-green: #06a44f;
+	--primary-10: rgba(255, 70, 70, 0.1);
+	--static-white-20: rgba(255, 255, 255, 0.2);
+	--static-white-40: rgba(255, 255, 255, 0.4);
+	--overlay: rgba(24, 28, 41, 0.8);
+	--font-family: "Montserrat", sans-serif;
+	--second-family: "Allura", sans-serif;
+	--third-family: "SF Pro", sans-serif;
+}
+
+/* Основні стилі */
+body {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	background-color: #eef2f5;
+	color: #333;
+	line-height: 1.5;
+	padding: 20px 0;
+}
+
+.wrapper {
+	margin: 0 auto;	
+	background-color: #ffffff;
+	border-radius: 16px;
+	overflow: hidden;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+/* --------------------- */
+.wrapper__container {
+	max-width: 1306px;
+	padding: 15px;
+	margin: 0 auto;
+	display: flex;
+	gap: 30px;
+}
+
+/* --------------------- */
+/* Стилі для header */
+.sidebar {
+	flex: 0 0 30%;
+	background-color: #1a305d;
+	color: #ffffff;
+	
+	border-radius: 16px 16px 0 0;
+}
+
+.header__photo-wrapper {
+	width: 100%;
+	height: 260px; 
+	overflow: hidden;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.header__avatar {	
+	padding: 20px;
+	width: 260px;
+	height: 100%;
+	border-radius: 50%;
+	object-fit: cover;
+	object-position: 60% 20%;
+}
+
+.header__title-group {
+	padding: 25px 20px 15px;
+	background-color: #16284f;
+}
+
+.header__name {
+	font-size: 1.8rem;
+	line-height: 1.1;
+	color: #43c6ac;
+	font-weight: 700;
+	letter-spacing: 1px;
+}
+
+.header__subtitle {
+	font-size: 0.75rem;
+	color: #a2b4d6;
+	margin-top: 8px;
+	letter-spacing: 1px;
+}
+
+.sidebar__content {
+	padding: 20px;
+}
+
+.sidebar__section {
+	margin-bottom: 25px;
+}
+
+.sidebar__title {
+	font-size: 0.95rem;
+	letter-spacing: 1.5px;
+	color: #ffffff;
+	border-bottom: 2px solid #2a437e;
+	padding-bottom: 5px;
+	margin-bottom: 12px;
+}
+
+.sidebar__text {
+	font-size: 0.85rem;
+	color: #c2d1e8;
+	line-height: 1.4;
+}
+
+.sidebar__list {
+	list-style-type: disc;
+	padding-left: 18px;
+}
+
+.sidebar__list--contacts {
+	list-style-type: none;
+	padding-left: 0;
+}
+
+.sidebar__list-item {
+	font-size: 0.85rem;
+	color: #c2d1e8;
+	margin-bottom: 6px;
+}
+
+.sidebar__link {
+	color: #43c6ac;
+	text-decoration: none;
+}
+
+/* --- Правая светлая колонка --- */
+.main-content {	
+	padding-block: 30px;
+	background-color: #ffffff;	
+}
+
+.nav {
+	margin-bottom: 25px;
+	border-bottom: 1px solid #e2e8f0;
+	padding-bottom: 10px;
+}
+
+.nav__list {
+	list-style: none;
+	display: flex;
+	gap: 12px;
+	flex-wrap: wrap;
+}
+
+.nav__link {
+	text-decoration: none;
+	color: #1a305d;
+	font-size: 0.85rem;
+	font-weight: 600;
+}
+
+.nav__link:hover {
+	color: #43c6ac;
+}
+
+.content-section {
+	margin-bottom: 30px;
+}
+
+.content-section__title {
+	font-size: 1rem;
+	background-color: #1a305d;
+	color: #ffffff;
+	padding: 6px 12px;
+	letter-spacing: 1px;
+	margin-bottom: 15px;
+	display: block;
+}
+
+.job-card {
+	margin-bottom: 15px;
+}
+
+.job-card__title {
+	font-size: 1.05rem;
+	color: #1a305d;
+}
+
+.job-card__meta {
+	font-size: 0.8rem;
+	color: #43c6ac;
+	margin-bottom: 8px;
+}
+
+.job-card__list {
+	padding-left: 18px;
+	font-size: 0.9rem;
+	color: #4a5568;
+}
+
+.content-section__link {
+	color: #1a305d;
+	font-weight: 600;
+}
+
+.code-block {
+	background-color: #1e1e1e;
+	color: #dcdcdc;
+	padding: 12px 15px;
+	border-radius: 6px;
+	font-family: Consolas, Monaco, monospace;
+	font-size: 0.85rem;
+	overflow-x: auto;
+}
+
+.footer {
+	margin-top: 40px;
+	padding-top: 15px;
+	border-top: 1px solid #e2e8f0;
+	text-align: center;
+	font-size: 0.85rem;
+}
+
+.footer__link {
+	color: #1a305d;
+	text-decoration: none;
+}
+
+.footer__logo {
+	vertical-align: middle;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	object-fit: cover;
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 560px) {
+	.wrapper__container {
+		flex-direction: column;
+	}
+
+	.main-content {	
+	padding: 30px 0px;
+	background-color: #ffffff;	
+}
+	.sidebar {
+		width: 100%;
+	}
+
+	.header__photo-wrapper {
+		height: 300px;
+	}
+}
